@@ -50,9 +50,9 @@ const SignUp = () => {
             /> */}
       {/* </TouchableOpacity> */}
       <View className=" items-center justify-center">
-        <Text className="mt-[-250px]"> -----Or sign in with----</Text>
+        <Text className="mt-[-330px]"> -----Or sign in with----</Text>
       </View>
-      <View className="flex-row mt-[-50]">
+      <View className="flex-row mt-[-120]">
         <TouchableOpacity style={{ marginHorizontal: 10 }}>
           <Icon name="facebook" size={30} color="#3b5998" />
         </TouchableOpacity>
@@ -62,6 +62,9 @@ const SignUp = () => {
         <TouchableOpacity style={{ marginHorizontal: 10 }}>
           <Icon name="google" size={30} color="#db4437" />
         </TouchableOpacity>
+      </View>
+      <View>
+        <Text className="mt-[30px]"> Already have an Account ? SignIn</Text>
       </View>
     </View>
   );
