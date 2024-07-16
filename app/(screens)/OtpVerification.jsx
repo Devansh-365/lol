@@ -41,6 +41,9 @@ const OtpVerification = () => {
           <Text className="">Didn't Receive the OTP</Text>
           <Text className="font-bold  mt-3 ml-8">Resend Code</Text>
         </View>
+        <TouchableOpacity className="bg-blue-500 w-80 h-10 items-center justify-center  mt-4 rounded-xl">
+          <Text className="text-white text-lg">Verify</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

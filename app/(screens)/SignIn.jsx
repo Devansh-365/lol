@@ -28,21 +28,11 @@ const SignIn = () => {
         <Text className="ml-48 text-blue-600 font-medium">
           Forgot Password?
         </Text>
+        <TouchableOpacity className="bg-blue-500 w-80 h-10 items-center justify-center  mt-4 rounded-xl">
+          <Text className="text-white text-lg">SignIn</Text>
+        </TouchableOpacity>
       </View>
-      {/* BUTTON */}
-      {/* <TouchableOpacity> */}
-      {/* <Button
-          // onPress={() => router.push("/home")}
-          style={{
-            fontSize: 20,
-            color: "#FF9C01",
-            marginBottom: 24,
-            width: 20,
-          }}
-          styleDisabled={{ color: "red" }}
-          title="Login"
-        /> */}
-      {/* </TouchableOpacity> */}
+
       <View className=" items-center justify-center">
         <Text className="mt-[-250px]"> -----Or sign in with----</Text>
       </View>
