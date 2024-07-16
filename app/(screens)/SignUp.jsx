@@ -1,8 +1,14 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import Icon from "react-native-vector-icons/FontAwesome"; // Import FontAwesome icons
+import CheckBox from "react-native-check-box";
 
 const SignUp = () => {
+  const [isSelected, setSelection] = useState(false);
+
+  const handleClick = () => {
+    setSelection(!isSelected);
+  };
   return (
     <View className="bg-white h-screen flex-1 items-center justify-center ">
       <View className="items-center ">
@@ -31,11 +37,21 @@ const SignUp = () => {
           placeholderTextColor="#7B7B8B"
           secureTextEntry
         />
-        <Text className="ml-48 text-blue-600 font-medium">
-          Forgot Password?
-        </Text>
-        <TouchableOpacity className="bg-blue-500 w-80 h-10 items-center justify-center  mt-4 rounded-xl">
-          <Text className="text-white text-lg">Create Account</Text>
+        {/* <CheckBox value={isSelected} onValueChange={setSelection} /> */}
+
+        <View>
+          <CheckBox
+            isChecked={isSelected}
+            onClick={handleClick}
+            className="flex-row flex-wrap   absolute"
+          />
+
+          <Text className=" w-full ml-7  text-blue-600 font-medium">
+            Agree with Terms and conditions
+          </Text>
+        </View>
+        <TouchableOpacity className="bg-blue-500 w-80 h-10 items-center justify-center  mt-11 rounded-xl">
+          <Text className="text-white text-lg">SignUp</Text>
         </TouchableOpacity>
       </View>
 
