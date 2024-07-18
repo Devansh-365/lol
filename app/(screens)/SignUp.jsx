@@ -1,6 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
-import Icon from "react-native-vector-icons/FontAwesome"; // Import FontAwesome icons
+import Icon from "react-native-vector-icons/FontAwesome";
 import CheckBox from "react-native-check-box";
 
 const SignUp = () => {
@@ -37,7 +37,6 @@ const SignUp = () => {
           placeholderTextColor="#7B7B8B"
           secureTextEntry
         />
-        {/* <CheckBox value={isSelected} onValueChange={setSelection} /> */}
 
         <View>
           <CheckBox
