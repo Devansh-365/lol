@@ -2,11 +2,9 @@ import { View, Text, TouchableOpacity, TextInput } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import IconArrow from "react-native-vector-icons/Ionicons";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons"; // Adjust the icon set as needed
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
-const Course = () => {
-  const navigation = useNavigation();
-
+const Mentor = () => {
   return (
     <View className="bg-white h-screen">
       <TouchableOpacity
@@ -17,39 +15,14 @@ const Course = () => {
       </TouchableOpacity>
       <View className="w-screen h-[175px] relative bg-gray-300 rounded-lg"></View>
       <View className="rounded-lg bg-white -mt-10 mx-2 p-4 ">
-        <View className="flex-row justify-between mr-4">
-          <Text className="text-yellow-400 shadow-md font-bold ml-3  mt-3 text-lg">
-            Best Seller
+        <View className=" items-center justify-center mt-4"></View>
+        <View className="flex-row items-center justify-between ml-2 mr-2 mt-2"></View>
+        <View className="justify-center items-center ">
+          <View className="w-[150px] -mt-20  h-[150px] rounded-full bg-gray-500 "></View>
+          <Text className=" font-bold text-black mt-2 text-lg ">john Doe</Text>
+          <Text className=" font-semibold text-gray-500 mt-2 ">
+            Design Mentor
           </Text>
-          <Text className="font-semibold text-gray-500 mt-3   ">
-            4.5(360 Reviews)
-          </Text>
-        </View>
-        <View className=" items-center justify-center mt-4">
-          <Text className="text-lg font-bold">
-            Design Thinking Fundamentals
-          </Text>
-        </View>
-        <View className="flex-row items-center justify-between ml-2 mr-2 mt-2">
-          <View className="flex-row items-center">
-            <Icon name="account" size={16} color="grey" className="mr-2" />
-
-            <Text className="text-gray-400">Robert green</Text>
-          </View>
-          <View className="flex-row items-center">
-            <Icon
-              name="playlist-play"
-              size={16}
-              color="grey"
-              className="mr-2"
-            />
-            <Text className="text-gray-400">Lessons</Text>
-          </View>
-          <View className="flex-row items-center">
-            <Icon name="certificate" size={16} color="grey" className="mr-2" />
-
-            <Text className="text-gray-400">certificate</Text>
-          </View>
         </View>
         <View className="items-center justify-between mt-11">
           <Text className=" font-bold text-gray-500">
@@ -75,4 +48,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default Mentor;
