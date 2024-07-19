@@ -41,7 +41,7 @@ const SignIn = () => {
           <Icon name="facebook" size={30} color="#3b5998" />
         </TouchableOpacity>
         <TouchableOpacity style={{ marginHorizontal: 10 }}>
-          <Icon name="apple" size={30} color="#000" />
+          ```` <Icon name="apple" size={30} color="#000" />
         </TouchableOpacity>
         <TouchableOpacity style={{ marginHorizontal: 10 }}>
           <Icon name="google" size={30} color="#db4437" />
