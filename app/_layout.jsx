@@ -12,6 +12,7 @@ const RootLayout = () => {
       <Stack.Screen name="Course" options={{ headerShown: false }} />
       <Stack.Screen name="Mentor" options={{ headerShown: false }} />
       <Stack.Screen name="Profile" options={{ headerShown: false }} />
+      <Stack.Screen name="CourseDetails" options={{ headerShown: false }} />
     </Stack>
   );
 };

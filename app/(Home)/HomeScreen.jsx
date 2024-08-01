@@ -5,10 +5,18 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigation } from "@react-navigation/native";
+
 import Icon from "react-native-vector-icons/Ionicons";
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    navigation.setOptions({ headerShown: false });
+  }, [navigation]);
+
   return (
     <ScrollView>
       <View className="bg-white h-screen flex-1 ">
@@ -26,7 +34,7 @@ const HomeScreen = () => {
         </View>
         <View>
           <Text className="text-black text-xl font-bold mt-3"> Categories</Text>
-          <ScrollView horizontal={true}>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View className="flex-row ml-3 mt-3 space-x-4">
               <TouchableOpacity>
                 <View className="bg-gray-200 w-[70px] h-[70px] rounded-full"></View>
@@ -51,7 +59,7 @@ const HomeScreen = () => {
             Popular Courses
           </Text>
 
-          <ScrollView horizontal={true}>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View className="flex-row ml-3 mt-3 space-x-4">
               <TouchableOpacity>
                 <View className="bg-gray-200 w-[200px] h-[120px] rounded-2xl"></View>
